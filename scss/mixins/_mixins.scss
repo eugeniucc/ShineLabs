@@ -1,0 +1,75 @@
+@mixin subscribe {
+  color: #462b13;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin fast {
+  color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin lights-normal {
+  color: #f8ad79;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@mixin lights-bold {
+  color: #f8ad79;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin exp-normal {
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin exp-white {
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin exp-orange {
+  color: #f8ad79;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin lights-btn {
+  color: #462b13;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin marquee {
+  color: #462b13;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

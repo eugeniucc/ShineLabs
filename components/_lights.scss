@@ -1,0 +1,97 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.lights {
+  padding-bottom: 12.4rem;
+  &__content {
+    padding-top: 11.4rem;
+    background: linear-gradient(
+      180deg,
+      #422410 0%,
+      rgba(45, 26, 15, 0.64) 100%
+    );
+  }
+  &__wrapper {
+    display: flex;
+    gap: 0.8rem;
+    &-img {
+      max-width: 100%;
+      width: 100%;
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  &__sleep {
+    max-width: 64.4rem;
+    width: 100%;
+    &-normal {
+      @include lights-normal;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-bold {
+      margin: 0rem 0.7rem;
+      display: flex;
+      align-self: flex-end;
+    }
+  }
+  &__exp {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 69.3rem;
+    width: 100%;
+    &-normal {
+      display: flex;
+      flex-wrap: wrap;
+      @include exp-normal;
+    }
+    &-white {
+      @include exp-white;
+      margin: 0 0.7rem;
+    }
+    &-orange {
+      @include exp-orange;
+      margin-right: 0.7rem;
+    }
+  }
+  &__btn {
+    @include lights-btn;
+    border: none;
+    background-color: var(--background);
+    cursor: pointer;
+    padding: 2rem 1.5rem;
+    border-radius: 1.4rem;
+    box-shadow: 0px 0px 100px 0px rgba(248, 173, 121, 0.25);
+    max-width: 22.3rem;
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  &__list {
+    display: flex;
+    gap: 1.1rem;
+  }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: var(--background);
+  padding: 2.1rem 0rem;
+  position: relative;
+  white-space: nowrap;
+  &__content {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 50s linear infinite;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 4rem;
+    @include marquee;
+  }
+}

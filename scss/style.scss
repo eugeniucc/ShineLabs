@@ -1,6 +1,10 @@
 // COMPONENTS
+@import "../components/header";
+@import "../components/lights";
 
 // MEDIA QUERIES COMPONENTS
+@import "../media-queries/header-media";
+@import "../media-queries/lights-media";
 
 // MIXINS
 @import "../scss/mixins/mixins";
@@ -8,7 +12,26 @@
 // VARIABLES
 @import "../scss/variables/variables";
 
+// KEYFRAMES
+@import "../scss/animations/keyframes";
+
 // FONTS
+
+@font-face {
+  font-family: "milkandhoney";
+  src: url("../../fonts/milkandhoney.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.milkandhoney {
+  color: #f8ad79;
+  font-family: "milkandhoney", sans-serif;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 // HTML
 
@@ -17,9 +40,15 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+img,
+span {
+  display: block;
+}
+
 // CONTAINER
 
 .container {
-  max-width: 132rem;
+  max-width: 119rem;
   margin: 0 auto;
 }
